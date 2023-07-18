@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* TOP NAV */
+
+.block-one {
+    border: solid #9addce;
+    background-color: #9addce;
+    background-size: cover;
+    width: 100vw;
+    height: 75vh;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    border: solid #ffffff;
+    background-color: #ffffff;
+    background-size: cover;
+    width: 100vw;
+    height: 8vh;
+}
+
+.nav-box {
+    display: inline-flex;
+    width: 99%;
+    justify-content: space-between;
+}
+
+.menu {
+    list-style: none;
+    border: solid #ffffff;
+    width: 15%;
+    height: 7vh;
+    margin: 0 5px 0 0;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ABOUT ME */
+
+.block-two {
+    border: solid #7db8ab;
+    background-color: #7db8ab;
+    background-size: cover;
+    width: 100vw;
+    height: 75vh;
+}
+
+
+/* PORTFOLIO  */
+
+.block-three {
+    border: solid #5aa696;
+    background-color: #5aa696;
+    background-size: cover;
+    width: 100vw;
+    height: 75vh;
+}
+
+.img-grid {
+    border: solid #5aa696;
+    width: 99%;
+    height: 74vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.polaroid {
+    border: solid 2px darkslategrey;
+    background-color: #ffffff;
+    margin: 30px;
+    padding-left: 5px;
+    width: 33vw;
+    height: 50vh;
+    display: inline-block;
+}
+
+.photo-box {
+    border: solid 2px darkslategrey;
+    background-color: #ffffff;
+    margin: 5px;
+    width: 24vw;
+    height: 30vh;
+    display: inline-block;
+}
+
+.port-cap {
+    list-style: none;
+}
+
+/* BLOG  */
+
+.block-four {
+    border: solid #458074;
+    background-color: #458074;
+    background-size: cover;
+    width: 100vw;
+    height: 75vh;
+}
+
+.blog-box {
+    border: solid white;
+    /* height: 66.5vh;
+    width: 45vw; */
+}
+
+.blog-post {
+    border: solid 25px white;
+    height: 66.5vh;
+    width: 45vw;
+    display: inline-flex;
+}
+
+/* SOCIALS  */
+
+.block-five {
+    border: solid #7db8ab;
+    background-color: #7db8ab;
+    background-size: cover;
+    width: 100vw;
+    height: 25vh;
+}
