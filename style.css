@@ -1,98 +1,205 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/menu-right-alt.css');
+
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+
 /* TOP NAV */
 
+
+/* Base styles for mobile */
 .block-one {
-    border: solid #9addce;
-    background-color: #9addce;
+    display: block;
+    border: solid 1px #979ea4;
     background-size: cover;
-    width: 100vw;
-    height: 75vh;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+    background-image: url(/Images/b&wmountainrange.jpg);
 }
+
 
 .top-nav {
     display: flex;
-    justify-content: space-between;
-    border: solid #ffffff;
-    background-color: #ffffff;
+    position: absolute;
+    border: solid black;
+    background-color: black;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 8vh;
 }
 
 .nav-box {
-    display: inline-flex;
-    width: 99%;
+    display: flex;
+    width: 100vw;
     justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding-right: 10px;
+}
+
+#logo {
+    color: #ffffff;
+    font-weight:lighter;
+}
+
+.gg-menu-right-alt {
+    color:#ffffff;
+    padding-right: 10px;
+}
+
+.header-text-box {
+    position:absolute;
+    padding: 40px;
+}
+
+@media screen and (max-width:768px) {
+    li.hide-nav {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .nav-box {
+        justify-content: space-between;
+    }
+    i.gg-menu-right-alt {
+        display: none;
+    }
 }
 
 .menu {
     list-style: none;
-    border: solid #ffffff;
-    width: 15%;
-    height: 7vh;
-    margin: 0 5px 0 0;
-    display: inline-flex;
-    justify-content: space-between;
+    display: flex;
     align-items: center;
+    margin: 0;
+}
+
+.menu li {
+    margin-right: 15px;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+    .menu {
+        width: auto;
+        height: auto;
+    }
+    
+    h1 {
+        font-size: 48px;
+    }
 }
 
 
 /* ABOUT ME */
-
 .block-two {
-    border: solid #7db8ab;
-    background-color: #7db8ab;
+    border-top: solid 1px #979ea4;
+    background-image: linear-gradient(#979ea4, black);
     background-size: cover;
     width: 100vw;
-    height: 75vh;
+    height: 50vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
 }
+
+.blurb {
+    border: solid 4px black;
+    width: 75vw;
+    height: fit-content;
+    position: absolute;
+    text-align: center;
+}
+
 
 
 /* PORTFOLIO  */
 
+
 .block-three {
-    border: solid #5aa696;
-    background-color: #5aa696;
+    border: solid black;
+    background-image: linear-gradient(black, #1b1a1a);
     background-size: cover;
     width: 100vw;
-    height: 75vh;
+    height: auto;
+
 }
 
-.img-grid {
-    border: solid #5aa696;
-    width: 99%;
-    height: 74vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.slide-container {
+    max-width: 98%;
+    position: relative;
+    margin: auto;
 }
 
-.polaroid {
-    border: solid 2px darkslategrey;
-    background-color: #ffffff;
-    margin: 30px;
-    padding-left: 5px;
-    width: 33vw;
-    height: 50vh;
-    display: inline-block;
-}
-
-.photo-box {
-    border: solid 2px darkslategrey;
-    background-color: #ffffff;
+.mySlides {
+    display: none;
+    border: solid 2px #ffffff;
     margin: 5px;
-    width: 24vw;
-    height: 30vh;
-    display: inline-block;
+    width: 98vw;
+    height: auto;
+    /* display: grid;
+    justify-self: center;
+    align-content: center; */
+
 }
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
 
 .port-cap {
-    list-style: none;
-}
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+} 
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
 
 /* BLOG  */
 
@@ -111,7 +218,7 @@ body {
 }
 
 .blog-post {
-    border: solid 25px white;
+    border: solid 20px white;
     height: 66.5vh;
     width: 45vw;
     display: inline-flex;
@@ -126,3 +233,4 @@ body {
     width: 100vw;
     height: 25vh;
 }
+
