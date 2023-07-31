@@ -227,10 +227,11 @@ h1 {
 /* SOCIALS  */
 
 .block-five {
-    border: solid #7db8ab;
-    background-color: #7db8ab;
+    border: solid black;
+    background-color: black;
+    color: #ffffff;
     background-size: cover;
     width: 100vw;
-    height: 25vh;
+    height: 15vh;
 }
 
